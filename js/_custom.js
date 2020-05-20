@@ -61,15 +61,17 @@ const footer = document.querySelector('footer');
 // в цикл
 const advantagesDiv = document.querySelectorAll('.advantages div');
 const advantagesP =document.querySelectorAll('.advantages p');
-const headerLi = document.querySelectorAll('header li');
+const advantagesLi =document.querySelectorAll('.advantages li');
+const headerA = document.querySelectorAll('header a');
 const profitTodayDiv = document.querySelectorAll('.profit-today div');
+const profitTodayli = document.querySelectorAll('.profit-today li');
 const obviousBefenefitsSpan = document.querySelectorAll('.obvious-befenefits span');
 const obviousBefenefitsP = document.querySelectorAll('.obvious-befenefits p');
 const offersP = document.querySelectorAll('.offers p');
 const footerA = document.querySelectorAll('footer a');
 const footerLi = document.querySelectorAll('footer li');
 
-
+console.log(headerA)
 
 
 
@@ -115,6 +117,15 @@ function darkTheme (e){
     }
     for (let i = 0; i < footerLi.length; i++ ){
         footerLi[i].classList.toggle('darkStyle')
+    }
+    for (let i = 0; i < headerA.length; i++ ){
+        headerA[i].classList.toggle('darkStyle')
+    }
+    for (let i = 0; i < advantagesLi.length; i++ ){
+        advantagesLi[i].classList.toggle('darkStyle')
+    }
+    for (let i = 0; i < profitTodayli.length; i++ ){
+        profitTodayli[i].classList.toggle('darkStyle')
     }
 
     
