@@ -8,35 +8,7 @@
             mobileMenu.classList.toggle('open-menu')
         })
     }
-    const buttonsProfitSlider = document.querySelectorAll('.profit-today-slider__buttons button');
-    const buttonsProfitSlider2 = document.querySelectorAll('.offers-slider__buttons button');
-    
-    const profitSliderContent = document.querySelector('.profit-today-slider');
-    const profitSliderContent2 = document.querySelector('.offers-slider');
-
-    if (buttonsProfitSlider && buttonsProfitSlider){
-        buttonsProfitSlider[0].addEventListener('click', scrollLeft)
-        buttonsProfitSlider[1].addEventListener('click', scrollright)
-        buttonsProfitSlider2[0].addEventListener('click', scrollLeft2)
-        buttonsProfitSlider2[1].addEventListener('click', scrollright2)
-    
-        function scrollLeft(){
-            let sltimeOut= setInterval(() => {profitSliderContent.scrollLeft += 2 }, 2); 
-             setTimeout(() => {clearInterval(sltimeOut);}, 1170);}
-        function scrollright(){
-            let sltimeOut= setInterval(() => {profitSliderContent.scrollLeft -= 2 }, 2);  
-             setTimeout(() => {clearInterval(sltimeOut);}, 1150);
-            }
-            function scrollLeft2(){
-                let sltimeOut= setInterval(() => {profitSliderContent2.scrollLeft += 2 }, 2); 
-                 setTimeout(() => {clearInterval(sltimeOut);}, 800);}
-            function scrollright2(){
-                let sltimeOut= setInterval(() => {profitSliderContent2.scrollLeft -= 2 }, 2);  
-                 setTimeout(() => {clearInterval(sltimeOut);}, 800);
-                }
-     }
      
-    
 })();
 
 (function(){
@@ -57,7 +29,9 @@ const earnsEveryP = document.querySelector('.earns-every p');
 const profitTodayH2 = document.querySelector('.profit-today h2');
 const obviousBefenefitsH2 = document.querySelector('.obvious-befenefits h2');
 const offers = document.querySelector('.offers');
+const offersH2 = document.querySelector('.offers h2');
 const footer = document.querySelector('footer');
+const profitTodaySliderButtonsDiv = document.querySelector('.profit-today-slider__buttons div');
 // в цикл
 const advantagesDiv = document.querySelectorAll('.advantages div');
 const advantagesP =document.querySelectorAll('.advantages p');
@@ -71,7 +45,7 @@ const offersP = document.querySelectorAll('.offers p');
 const footerA = document.querySelectorAll('footer a');
 const footerLi = document.querySelectorAll('footer li');
 
-console.log(headerA)
+
 
 
 
@@ -92,7 +66,9 @@ function darkTheme (e){
     obviousBefenefitsH2.classList.toggle('darkStyle')
     profitTodayH2.classList.toggle('darkStyle')
     offers.classList.toggle('darkStyle')
+    offersH2.classList.toggle('darkStyle')
     footer.classList.toggle('darkStyle')
+    profitTodaySliderButtonsDiv.classList.toggle('darkStyle')
 
     for (let i = 0; i < advantagesDiv.length; i++ ){
         advantagesDiv[i].classList.toggle('darkStyle-helper')
