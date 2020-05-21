@@ -45,7 +45,7 @@ const offersP = document.querySelectorAll('.offers p');
 const footerA = document.querySelectorAll('footer a');
 const footerLi = document.querySelectorAll('footer li');
 
-
+console.log(obviousBefenefitsSpan)
 
 
 
@@ -79,7 +79,7 @@ function darkTheme (e){
     for (let i = 0; i < profitTodayDiv.length; i++ ){
         profitTodayDiv[i].classList.toggle('darkStyle')
     }
-    for (let i = 0; i < obviousBefenefitsSpan.length; i++ ){
+    for (let i = 1; i < obviousBefenefitsSpan.length; i++ ){
         obviousBefenefitsSpan[i].classList.toggle('darkStyle-helper')
     }
     for (let i = 0; i < obviousBefenefitsP.length; i++ ){
@@ -106,18 +106,6 @@ function darkTheme (e){
 
     
 }
-// const profitTodaySlider = document.querySelector('.profit-today-slider');
-// const swiperSlide = profitTodaySlider.querySelectorAll('.swiper-slide');
-
-// if(swiperSlide && window.screen.availWidth === 1920){
-// for(let i = 0; i < swiperSlide.length; i++){
-//     setTimeout(() => {
-//        swiperSlide[i].style.width = '600px';
-//        swiperSlide[i].style.margin = '0' 
-//     }, );
-    
-// }
-// }
 
 
 
