@@ -136,6 +136,7 @@
             </div>
         </fieldset>
     </div></div>
+    
   
     </div>
  </div>
@@ -184,11 +185,11 @@
                 <span>Наша цель – обеспечить возможность каждому человеку получать прибыль, инвестируя в деятельность компании, или построить свой бизнес с Graybet.</span>
                 
                 <div class="offers-slider">
-                    <div class="swiper-container">
+                    <div class="swiper-container-s2">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide" data-hash="slide1">
                         <div class="offer-slide">
-                            <video poster="img/Intersect.jpg"  width="253" hight="160">
+                            <video poster="img/Intersect.png"  width="253" hight="160">
                                 <source src="#" >
                                </video>
                                <p>Наименование ролика</p>
@@ -196,7 +197,7 @@
                          </div>
                       <div class="swiper-slide" data-hash="slide2">
                         <div class="offer-slide">
-                            <video poster="img/Intersect1.jpg"  width="253" hight="160">
+                            <video poster="img/Intersect2.png"  width="253" hight="160">
                                 <source src="#" >
                                </video>
                                <p>Наименование ролика</p>
@@ -204,7 +205,7 @@
                         </div>
                       <div class="swiper-slide" data-hash="slide3">
                         <div class="offer-slide">
-                            <video poster="img/Intersect2.jpg"  width="253" hight="160">
+                            <video poster="img/Intersect3.png"  width="253" hight="160">
                                 <source src="#" >
                                </video>
                                <p>Наименование ролика</p>
@@ -212,7 +213,7 @@
                          </div>
                       <div class="swiper-slide" data-hash="slide4">
                         <div class="offer-slide">
-                            <video poster="img/Intersect.jpg"  width="253" hight="160">
+                            <video poster="img/Intersect.png"  width="253" hight="160">
                                 <source src="#" >
                                </video>
                                <p>Наименование ролика</p>
@@ -226,9 +227,9 @@
                         </div>
                 
                                 <div class="profit-today-slider__buttons">
-                                    <button class="swiper-button-next"></button>
+                                    <button class="swiper-button-next-s2"></button>
                                      <div></div>
-                                      <button class="swiper-button-prev"></button>
+                                      <button class="swiper-button-prev-s2"></button>
                                 </div>
             </section>
 
@@ -253,8 +254,9 @@
     </footer>  
 </body>
 
-<script src="js/scripts.min.js"></script>
+
 <script src="js/swiper.min.js"></script>
+<script src="js/scripts.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
@@ -269,6 +271,19 @@
         prevEl: '.swiper-button-prev',
       },
     });
+    var mySwiper2 = new Swiper('.swiper-container-s2', {
+        slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-s2',
+        prevEl: '.swiper-button-prev-s2',
+      },
+  });
   </script>
 
    </script>

@@ -106,6 +106,19 @@ function darkTheme (e){
 
     
 }
+// const profitTodaySlider = document.querySelector('.profit-today-slider');
+// const swiperSlide = profitTodaySlider.querySelectorAll('.swiper-slide');
+
+// if(swiperSlide && window.screen.availWidth === 1920){
+// for(let i = 0; i < swiperSlide.length; i++){
+//     setTimeout(() => {
+//        swiperSlide[i].style.width = '600px';
+//        swiperSlide[i].style.margin = '0' 
+//     }, );
+    
+// }
+// }
+
 
 
 })();
