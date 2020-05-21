@@ -45,7 +45,7 @@ const offersP = document.querySelectorAll('.offers p');
 const footerA = document.querySelectorAll('footer a');
 const footerLi = document.querySelectorAll('footer li');
 
-console.log(obviousBefenefitsSpan)
+
 
 
 
